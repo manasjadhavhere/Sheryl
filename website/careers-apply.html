@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply for a Position — Sheryl Pharmaceuticals Careers</title>
+  <meta name="description" content="Apply for a position at Sheryl Pharmaceuticals. Submit your application with resume and join our team committed to advancing healthcare." />
+  <link rel="icon" href="assets/images/logo.png" type="image/png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <style>
+    .apply-breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.85rem; color: #FFFFFF;
+      margin-bottom: 20px;
+      font-family: var(--font-head);
+      font-weight: 500;
+    }
+    .apply-breadcrumb a { color: #FFFFFF; opacity: 0.85; transition: opacity 0.2s; }
+    .apply-breadcrumb a:hover { opacity: 1; color: var(--gold-light); }
+
+    /* Layout: form + sidebar */
+    .apply-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 40px;
+      align-items: start;
+    }
+    .apply-sidebar { display: flex; flex-direction: column; gap: 24px; }
+    .apply-sidebar-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 28px;
+    }
+    .apply-sidebar-card h4 { margin-bottom: 12px; font-size: 0.95rem; }
+    .apply-sidebar-card p  { font-size: 0.85rem; }
+    .apply-sidebar-card ul { margin-top: 14px; display: flex; flex-direction: column; gap: 10px; }
+    .apply-sidebar-card ul li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.84rem; color: var(--text-mid);
+    }
+    .apply-sidebar-card ul li::before {
+      content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0;
+    }
+    .apply-navy-card {
+      background: var(--navy);
+      border: none;
+      border-radius: var(--radius-md);
+      padding: 28px;
+    }
+    .apply-navy-card h4 { color: var(--white); margin-bottom: 10px; font-size: 0.95rem; }
+    .apply-navy-card p  { color: rgba(255,255,255,0.58); font-size: 0.85rem; }
+    .apply-navy-card a  { color: var(--gold-light); font-weight: 600; }
+
+    @media (max-width: 900px) {
+      .apply-layout { grid-template-columns: 1fr; }
+      .apply-sidebar { order: -1; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar" aria-label="Main Navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Sheryl Pharmaceuticals Logo" /></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+        <a href="therapeutic-segments.html" class="nav-link">Segments</a><a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="manufacturing.html" class="nav-link">Manufacturing</a><a href="quality-compliance.html" class="nav-link">Quality</a>
+        <a href="global-business.html" class="nav-link">Global</a><a href="news-insights.html" class="nav-link">News</a>
+        <a href="careers.html" class="nav-link active">Careers</a>
+      </div>
+      <div class="nav-actions">
+        <a href="contact.html" class="nav-cta btn btn-sm">Contact Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Open Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-nav" id="mobile-nav">
+  <button class="mobile-nav-close" id="mobile-nav-close">&#x2715;</button>
+  <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+  <a href="therapeutic-segments.html" class="nav-link">Therapeutic Segments</a><a href="portfolio.html" class="nav-link">Portfolio</a>
+  <a href="manufacturing.html" class="nav-link">Manufacturing</a><a href="quality-compliance.html" class="nav-link">Quality &amp; Compliance</a>
+  <a href="global-business.html" class="nav-link">Global Business</a><a href="news-insights.html" class="nav-link">News &amp; Insights</a>
+  <a href="careers.html" class="nav-link">Careers</a><a href="contact.html" class="nav-link">Contact Us</a>
+</nav>
+
+<!-- APPLY HERO -->
+<section class="apply-hero global-page-hero alt-bg" aria-label="Apply Hero">
+  <div class="container">
+    <div class="apply-hero-inner">
+      <div class="apply-breadcrumb">
+        <a href="index.html">Home</a> <span>›</span>
+        <a href="careers.html">Careers</a> <span>›</span>
+        <span style="color:var(--gold-light)">Apply</span>
+      </div>
+      <span class="eyebrow">Join Our Team</span>
+      <h1>Career Application</h1>
+      <p>Fill in the form below to apply. Our HR team reviews every application and will get in touch within 5–7 business days.</p>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION FORM -->
+<section class="apply-section section section-alt" aria-labelledby="apply-form-heading">
+  <div class="container">
+    <div class="apply-layout">
+
+      <!-- MAIN FORM -->
+      <div>
+        <div class="form-wrap">
+          <div class="form-header">
+            <div>
+              <span class="form-eyebrow">Talent Acquisition</span>
+              <h2 id="apply-form-heading">Application Form</h2>
+            </div>
+            <div class="form-header-badge">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              <span>Encrypted & Confidential</span>
+            </div>
+          </div>
+          <div class="form-divider"></div>
+
+          <form id="careers-form" novalidate aria-label="Career Application Form">
+
+            <!-- Personal Information -->
+            <div class="form-section-title" aria-label="Section: Personal Information">Personal Information</div>
+            <div class="form-grid" style="margin-bottom:28px">
+              <div class="form-group full">
+                <label for="full_name">Full Name <span>*</span></label>
+                <input type="text" id="full_name" name="full_name" class="form-control" placeholder="Enter your full name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="apply-email">Email Address <span>*</span></label>
+                <input type="email" id="apply-email" name="from_email" class="form-control" placeholder="your@email.com" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="apply-phone">Contact Number <span>*</span></label>
+                <input type="tel" id="apply-phone" name="phone" class="form-control" placeholder="+91 00000 00000" required autocomplete="tel" />
+              </div>
+            </div>
+
+            <!-- Position Details -->
+            <div class="form-section-title" aria-label="Section: Position Details">Position Details</div>
+            <div class="form-grid" style="margin-bottom:28px">
+              <div class="form-group">
+                <label for="position">Position Applying For <span>*</span></label>
+                <input type="text" id="position" name="position" class="form-control" placeholder="e.g. Medical Representative" required />
+              </div>
+              <div class="form-group">
+                <label for="start_date">Available Start Date <span>*</span></label>
+                <input type="date" id="start_date" name="start_date" class="form-control" required />
+              </div>
+            </div>
+
+            <!-- Employment Status -->
+            <div class="form-section-title" aria-label="Section: Employment Status">Current Employment Status <span style="color:var(--green)">*</span></div>
+            <div class="form-group" style="margin-bottom:28px">
+              <div class="radio-group" role="group" aria-label="Select your current employment status">
+                <label class="radio-option" for="emp-employed">
+                  <input type="radio" id="emp-employed" name="employment_status" value="Employed" required />
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-3px;margin-right:4px"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> Employed
+                </label>
+                <label class="radio-option" for="emp-self">
+                  <input type="radio" id="emp-self" name="employment_status" value="Self Employed" />
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-3px;margin-right:4px"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-3"/></svg> Self Employed
+                </label>
+                <label class="radio-option" for="emp-unemployed">
+                  <input type="radio" id="emp-unemployed" name="employment_status" value="Unemployed" />
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-3px;margin-right:4px"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Unemployed
+                </label>
+                <label class="radio-option" for="emp-fresher">
+                  <input type="radio" id="emp-fresher" name="employment_status" value="Fresher" />
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-3px;margin-right:4px"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg> Fresher
+                </label>
+              </div>
+            </div>
+
+            <!-- Resume Upload -->
+            <div class="form-section-title" aria-label="Section: Resume Upload">Upload Your Resume</div>
+            <div class="form-group full" style="margin-bottom:32px">
+              <div class="file-upload-area" id="file-upload-area" role="button" tabindex="0" aria-label="Upload resume — click or drag and drop">
+                <input type="file" id="resume-upload" name="resume" accept=".pdf,.doc,.docx" aria-label="Select resume file" />
+                <div class="file-upload-icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 12 15 15"/></svg></div>
+                <h4>Drop your resume here or click to browse</h4>
+                <p>Accepted formats: PDF, DOC, DOCX &nbsp;·&nbsp; <strong>Max 5 MB</strong></p>
+                <div class="file-types" aria-label="Accepted file types">
+                  <span class="file-type-badge">PDF</span>
+                  <span class="file-type-badge">DOC</span>
+                  <span class="file-type-badge">DOCX</span>
+                </div>
+              </div>
+              <div class="file-selected-name" id="file-selected-name" role="status" aria-live="polite">
+                <span aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <div>
+                  <strong class="fn-name"></strong>
+                  <span class="fn-size" style="color:var(--text-muted);margin-left:6px;font-size:0.8rem"></span>
+                </div>
+              </div>
+              <p style="font-size:0.78rem;color:var(--text-muted);margin-top:10px">
+                📎 Your resume will be attached directly to our HR team's email via EmailJS (up to 5 MB).
+                For files that cannot be sent, please email your resume to
+                <a href="mailto:careers@sherylpharma.com" style="color:var(--green)">careers@sherylpharma.com</a>
+                with the subject line "Resume — [Your Name] — [Position]".
+              </p>
+            </div>
+
+            <!-- Submit -->
+            <div class="form-submit-bar">
+              <div class="form-submit-note">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span>Direct HR submission · 5–7 business day review</span>
+              </div>
+              <button type="submit" id="careers-submit-btn" class="btn-submit-pro submit-btn" data-label="Submit Application">
+                Submit Application →
+              </button>
+            </div>
+            <div id="careers-msg" class="form-message" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="apply-sidebar" aria-label="Application information">
+        <div class="apply-sidebar-card">
+          <h4><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>What Happens Next?</h4>
+          <p>After you submit your application, here's what to expect:</p>
+          <ul role="list">
+            <li role="listitem">Our HR team reviews your application within 5–7 business days</li>
+            <li role="listitem">Shortlisted candidates are contacted for an initial call</li>
+            <li role="listitem">A formal interview is scheduled</li>
+            <li role="listitem">Offer and onboarding for selected candidates</li>
+          </ul>
+        </div>
+
+        <div class="apply-sidebar-card">
+          <h4><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>Resume Tips</h4>
+          <ul role="list">
+            <li role="listitem">Keep your resume concise (1–2 pages)</li>
+            <li role="listitem">Highlight pharmaceutical or healthcare experience</li>
+            <li role="listitem">Include measurable achievements and metrics</li>
+            <li role="listitem">Use a clean, professional format (PDF preferred)</li>
+          </ul>
+        </div>
+
+        <div class="apply-navy-card">
+          <h4><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Prefer to Email?</h4>
+          <p>You can also send your resume and covering note directly to our HR team:</p>
+          <p style="margin-top:12px"><a href="mailto:careers@sherylpharma.com">careers@sherylpharma.com</a></p>
+          <p style="margin-top:8px;font-size:0.8rem;color:rgba(255,255,255,0.4)">Please include the position name in the email subject.</p>
+        </div>
+
+        <div class="apply-sidebar-card" style="text-align:center">
+          <div style="margin-bottom:12px;color:var(--navy)" aria-hidden="true"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h4>View All Openings</h4>
+          <p style="margin-bottom:16px">Not sure which role to apply for? Browse all our open positions.</p>
+          <a href="careers.html" class="btn btn-navy btn-sm" style="width:100%;justify-content:center">View Open Positions</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><img src="assets/images/logo.png" alt="Sheryl Pharmaceuticals Logo" /><p>Advancing healthcare worldwide through quality, innovation and excellence.</p>
+        <div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn">in</a><a href="#" class="social-link" aria-label="Twitter">𝕏</a><a href="#" class="social-link" aria-label="Facebook">f</a><a href="#" class="social-link" aria-label="Instagram">◎</a></div>
+      </div>
+      <div class="footer-col"><h5>Company</h5><nav class="footer-links"><a href="about.html">About Sheryl</a><a href="therapeutic-segments.html">Therapeutic Segments</a><a href="portfolio.html">Our Portfolio</a><a href="manufacturing.html">Manufacturing</a><a href="quality-compliance.html">Quality &amp; Compliance</a></nav></div>
+      <div class="footer-col"><h5>Business</h5><nav class="footer-links"><a href="global-business.html">Global Business</a><a href="news-insights.html">News &amp; Insights</a><a href="careers.html">Careers</a><a href="contact.html">Contact Us</a></nav></div>
+      <div class="footer-col"><h5>Careers Contact</h5>
+        <div class="footer-contact-item"><div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="text"><strong>HR Email</strong>careers@sherylpharma.com</div></div>
+        <div class="footer-contact-item"><div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="text"><strong>Office</strong>India (Address to be updated)</div></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Sheryl Pharmaceuticals. All rights reserved.</p><nav class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Sitemap</a></nav></div>
+  </div>
+</footer>
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/emailjs-config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

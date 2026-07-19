@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Portfolio — Sheryl Pharmaceuticals</title>
+  <meta name="description" content="Browse the Sheryl Pharmaceuticals product portfolio — high-quality pharmaceutical formulations across Women's Health, Anti-Infectives, Gastroenterology, Nutrition, Bone Care and General Medicine." />
+  <link rel="icon" href="assets/images/logo.png" type="image/png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar" aria-label="Main Navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Sheryl Pharmaceuticals Logo" /></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+        <a href="therapeutic-segments.html" class="nav-link">Segments</a><a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="manufacturing.html" class="nav-link">Manufacturing</a><a href="quality-compliance.html" class="nav-link">Quality</a>
+        <a href="global-business.html" class="nav-link">Global</a><a href="news-insights.html" class="nav-link">News</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+      </div>
+      <div class="nav-actions">
+        <a href="contact.html" class="nav-cta btn btn-sm">Contact Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Open Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-nav" id="mobile-nav">
+  <button class="mobile-nav-close" id="mobile-nav-close">&#x2715;</button>
+  <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a>
+  <a href="therapeutic-segments.html" class="nav-link">Therapeutic Segments</a><a href="portfolio.html" class="nav-link">Portfolio</a>
+  <a href="manufacturing.html" class="nav-link">Manufacturing</a><a href="quality-compliance.html" class="nav-link">Quality &amp; Compliance</a>
+  <a href="global-business.html" class="nav-link">Global Business</a><a href="news-insights.html" class="nav-link">News &amp; Insights</a>
+  <a href="careers.html" class="nav-link">Careers</a><a href="contact.html" class="nav-link">Contact Us</a>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero global-page-hero alt-bg" aria-label="Portfolio Hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="eyebrow">Product Portfolio</span>
+      <h1>Our Portfolio</h1>
+      <p>A carefully curated range of pharmaceutical formulations built on clinical evidence, quality manufacturing and patient-first thinking.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO SECTION -->
+<section class="section section-alt" aria-labelledby="portfolio-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Product Range</span>
+      <h2 id="portfolio-heading">Explore Our Products</h2>
+      <div class="gold-line"></div>
+      <p>Filter by therapeutic category to find the products most relevant to your clinical practice or business needs.</p>
+    </div>
+
+    <!-- Filter -->
+    <div class="portfolio-filter" role="group" aria-label="Product category filter">
+      <button class="filter-btn active" data-filter="all"      id="filter-all">All Products</button>
+      <button class="filter-btn" data-filter="womens"          id="filter-womens">Women's Health</button>
+      <button class="filter-btn" data-filter="anti-infectives" id="filter-anti">Anti-Infectives</button>
+      <button class="filter-btn" data-filter="gastro"          id="filter-gastro">Gastroenterology</button>
+      <button class="filter-btn" data-filter="nutrition"       id="filter-nutrition">Nutrition &amp; Wellness</button>
+      <button class="filter-btn" data-filter="bone"            id="filter-bone">Bone &amp; Joint</button>
+      <button class="filter-btn" data-filter="general"         id="filter-general">General Medicine</button>
+    </div>
+
+    <div class="portfolio-grid" role="list">
+      <!-- Women's Health -->
+      <article class="portfolio-item reveal" data-category="womens" role="listitem">
+        <div class="pi-img" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 8v8"/><path d="M8 12h8"/></svg></div>
+        <div class="pi-body">
+          <span class="tag">Women's Health</span>
+          <h4>Women's Wellness Complex</h4>
+          <p>Comprehensive multivitamin and mineral formulation tailored for women's daily health needs.</p>
+          <a href="contact.html" class="product-link" id="enquire-womens-1">Enquire Now →</a>
+        </div>
+      </article>
+      <article class="portfolio-item reveal reveal-delay-1" data-category="womens" role="listitem">
+        <div class="pi-img" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="6"/><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg></div>
+        <div class="pi-body">
+          <span class="tag">Women's Health</span>
+          <h4>GynoCare Forte</h4>
+          <p>Advanced gynecological health support combining key nutrients for optimal reproductive wellbeing.</p>
+          <a href="contact.html" class="product-link" id="enquire-womens-2">Enquire Now →</a>
+        </div>
+      </article>
+      <article class="portfolio-item reveal reveal-delay-2" data-category="womens" role="listitem">
+        <div class="pi-img" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <div class="pi-body">
+          <span class="tag">Women's Health</span>
+          <h4>MaternaVit Premium</h4>
+          <p>Prenatal and postnatal nutritional support with folic acid, iron, DHA and key vitamins.</p>
+          <a href="contact.html" class="product-link" id="enquire-womens-3">Enquire Now →</a>
+        </div>
+      </article>
+
+      <!-- Anti-Infectives -->
+      <article class="portfolio-item reveal" data-category="anti-infectives" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#e8f5ee,#d0eddf)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A7A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg></div>
+        <div class="pi-body">
+          <span class="tag" style="background:#e8f5ee;color:#1A7A4A">Anti-Infectives</span>
+          <h4>AzithroSheryl 500</h4>
+          <p>Azithromycin 500mg tablets for effective management of respiratory and skin infections.</p>
+          <a href="contact.html" class="product-link" id="enquire-anti-1">Enquire Now →</a>
+        </div>
+      </article>
+      <article class="portfolio-item reveal reveal-delay-1" data-category="anti-infectives" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#e8f5ee,#d0eddf)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A7A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg></div>
+        <div class="pi-body">
+          <span class="tag" style="background:#e8f5ee;color:#1A7A4A">Anti-Infectives</span>
+          <h4>AmoxiClav Duo</h4>
+          <p>Amoxicillin + Clavulanate combination for broad-spectrum bacterial infection treatment.</p>
+          <a href="contact.html" class="product-link" id="enquire-anti-2">Enquire Now →</a>
+        </div>
+      </article>
+      <article class="portfolio-item reveal reveal-delay-2" data-category="anti-infectives" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#e8f5ee,#d0eddf)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A7A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div class="pi-body">
+          <span class="tag" style="background:#e8f5ee;color:#1A7A4A">Anti-Infectives</span>
+          <h4>FluconaSheryl 150</h4>
+          <p>Fluconazole capsules for treatment of fungal infections — oral and systemic.</p>
+          <a href="contact.html" class="product-link" id="enquire-anti-3">Enquire Now →</a>
+        </div>
+      </article>
+
+      <!-- Gastroenterology -->
+      <article class="portfolio-item reveal" data-category="gastro" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#e8eeff,#d0d8ff)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0A1F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 9c0-2.5 2.5-5 6-5 4.5 0 7 3.5 7 7 0 4.5-4.5 5.5-4.5 10.5 0 3 2.5 5.5 6 7.5"/><path d="M13 30c1.5-4.5 6-5 6-10"/></svg></div>
+        <div class="pi-body">
+          <span class="tag tag-navy">Gastroenterology</span>
+          <h4>GastroClear Plus</h4>
+          <p>Proton pump inhibitor + domperidone combination for GERD and acid reflux management.</p>
+          <a href="contact.html" class="product-link" id="enquire-gastro-1">Enquire Now →</a>
+        </div>
+      </article>
+      <article class="portfolio-item reveal reveal-delay-1" data-category="gastro" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#e8eeff,#d0d8ff)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0A1F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 2 2 4-4"/></svg></div>
+        <div class="pi-body">
+          <span class="tag tag-navy">Gastroenterology</span>
+          <h4>ProBio Guard</h4>
+          <p>Multi-strain probiotic formulation for gut microbiome restoration and digestive health.</p>
+          <a href="contact.html" class="product-link" id="enquire-gastro-2">Enquire Now →</a>
+        </div>
+      </article>
+      <article class="portfolio-item reveal reveal-delay-2" data-category="gastro" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#e8eeff,#d0d8ff)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0A1F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
+        <div class="pi-body">
+          <span class="tag tag-navy">Gastroenterology</span>
+          <h4>HepaTone Syrup</h4>
+          <p>Hepatoprotective syrup with silymarin and essential B-vitamins for liver support.</p>
+          <a href="contact.html" class="product-link" id="enquire-gastro-3">Enquire Now →</a>
+        </div>
+      </article>
+
+      <!-- Nutrition -->
+      <article class="portfolio-item reveal" data-category="nutrition" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#fff8e8,#ffefc4)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8a6a1e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 28c2.5-9.5 12-20.5 22-23-2.5 9.5-13 20.5-23 21z"/><line x1="8" y1="28" x2="19" y2="17"/></svg></div>
+        <div class="pi-body">
+          <span class="tag tag-gold">Nutrition &amp; Wellness</span>
+          <h4>OmegaVital D3</h4>
+          <p>Omega-3 + Vitamin D3 + Vitamin K2 softgel capsules for cardiovascular and bone health.</p>
+          <a href="contact.html" class="product-link" id="enquire-nutri-1">Enquire Now →</a>
+        </div>
+      </article>
+      <article class="portfolio-item reveal reveal-delay-1" data-category="nutrition" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#fff8e8,#ffefc4)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8a6a1e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <div class="pi-body">
+          <span class="tag tag-gold">Nutrition &amp; Wellness</span>
+          <h4>IronVit Forte Syrup</h4>
+          <p>Iron + Folic Acid + Vitamin B12 syrup for anaemia management and haematological support.</p>
+          <a href="contact.html" class="product-link" id="enquire-nutri-2">Enquire Now →</a>
+        </div>
+      </article>
+      <article class="portfolio-item reveal reveal-delay-2" data-category="nutrition" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#fff8e8,#ffefc4)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8a6a1e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></div>
+        <div class="pi-body">
+          <span class="tag tag-gold">Nutrition &amp; Wellness</span>
+          <h4>ImmuShield Effervescent</h4>
+          <p>Effervescent immunity booster with Vitamin C, Zinc and Elderberry extract.</p>
+          <a href="contact.html" class="product-link" id="enquire-nutri-3">Enquire Now →</a>
+        </div>
+      </article>
+
+      <!-- Bone & Joint -->
+      <article class="portfolio-item reveal" data-category="bone" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#f5ede8,#edd8cc)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8A4A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="4"/><circle cx="28" cy="8" r="4"/><circle cx="8" cy="28" r="4"/><circle cx="28" cy="28" r="4"/><line x1="11" y1="11" x2="25" y2="25"/></svg></div>
+        <div class="pi-body">
+          <span class="tag" style="background:#f5ede8;color:#8A4A1A">Bone &amp; Joint</span>
+          <h4>CalciMax Ultra</h4>
+          <p>Calcium citrate + Vitamin D3 + Magnesium tablet for comprehensive bone health support.</p>
+          <a href="contact.html" class="product-link" id="enquire-bone-1">Enquire Now →</a>
+        </div>
+      </article>
+      <article class="portfolio-item reveal reveal-delay-1" data-category="bone" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#f5ede8,#edd8cc)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8A4A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></div>
+        <div class="pi-body">
+          <span class="tag" style="background:#f5ede8;color:#8A4A1A">Bone &amp; Joint</span>
+          <h4>JointFlex Advance</h4>
+          <p>Glucosamine + Chondroitin + MSM formulation for joint mobility and cartilage support.</p>
+          <a href="contact.html" class="product-link" id="enquire-bone-2">Enquire Now →</a>
+        </div>
+      </article>
+      <article class="portfolio-item reveal reveal-delay-2" data-category="bone" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#f5ede8,#edd8cc)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8A4A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div class="pi-body">
+          <span class="tag" style="background:#f5ede8;color:#8A4A1A">Bone &amp; Joint</span>
+          <h4>OsteoGuard Forte</h4>
+          <p>Advanced osteoporosis prevention formula with collagen peptides, calcium and boron.</p>
+          <a href="contact.html" class="product-link" id="enquire-bone-3">Enquire Now →</a>
+        </div>
+      </article>
+
+      <!-- General Medicine -->
+      <article class="portfolio-item reveal" data-category="general" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#ede8f5,#d8ccee)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4A1A8E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="13" width="24" height="10" rx="5"/><line x1="18" y1="13" x2="18" y2="23"/></svg></div>
+        <div class="pi-body">
+          <span class="tag" style="background:#ede8f5;color:#4A1A8E">General Medicine</span>
+          <h4>PainEase Rapid</h4>
+          <p>Fast-acting analgesic and antipyretic combination for pain and fever management.</p>
+          <a href="contact.html" class="product-link" id="enquire-gen-1">Enquire Now →</a>
+        </div>
+      </article>
+      <article class="portfolio-item reveal reveal-delay-1" data-category="general" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#ede8f5,#d8ccee)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4A1A8E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div>
+        <div class="pi-body">
+          <span class="tag" style="background:#ede8f5;color:#4A1A8E">General Medicine</span>
+          <h4>AllerClear Tabs</h4>
+          <p>Non-drowsy antihistamine for effective allergy and urticaria management.</p>
+          <a href="contact.html" class="product-link" id="enquire-gen-2">Enquire Now →</a>
+        </div>
+      </article>
+      <article class="portfolio-item reveal reveal-delay-2" data-category="general" role="listitem">
+        <div class="pi-img" style="background:linear-gradient(135deg,#ede8f5,#d8ccee)" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4A1A8E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"/></svg></div>
+        <div class="pi-body">
+          <span class="tag" style="background:#ede8f5;color:#4A1A8E">General Medicine</span>
+          <h4>CardioVital Support</h4>
+          <p>Cardiovascular health supplement with CoQ10, L-Carnitine and heart-protective antioxidants.</p>
+          <a href="contact.html" class="product-link" id="enquire-gen-3">Enquire Now →</a>
+        </div>
+      </article>
+    </div>
+
+    <div style="text-align:center;margin-top:48px" class="reveal">
+      <p style="color:var(--text-muted);margin-bottom:20px;font-size:0.9rem">This is a representative portfolio. Contact us for our complete product list, pricing and availability.</p>
+      <a href="contact.html" class="btn btn-navy btn-lg" id="portfolio-enquire-btn">Enquire About Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner" aria-labelledby="port-cta-heading">
+  <div class="container" style="position:relative;z-index:1">
+    <h2 id="port-cta-heading">Interested in Our Products?</h2>
+    <p>Contact our team for detailed product information, pricing, samples and distribution partnership enquiries.</p>
+    <div class="cta-btns">
+      <a href="contact.html"         class="btn btn-outline btn-lg">Get in Touch</a>
+      <a href="global-business.html" class="btn btn-gold btn-lg">Business Enquiry</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Sheryl Pharmaceuticals Logo" />
+        <p>A dynamic pharmaceutical company committed to advancing healthcare worldwide.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a><a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-link" aria-label="Facebook">f</a><a href="#" class="social-link" aria-label="Instagram">◎</a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Company</h5><nav class="footer-links">
+        <a href="about.html">About Sheryl</a><a href="therapeutic-segments.html">Therapeutic Segments</a>
+        <a href="portfolio.html">Our Portfolio</a><a href="manufacturing.html">Manufacturing</a>
+        <a href="quality-compliance.html">Quality &amp; Compliance</a>
+      </nav></div>
+      <div class="footer-col"><h5>Business</h5><nav class="footer-links">
+        <a href="global-business.html">Global Business</a><a href="news-insights.html">News &amp; Insights</a>
+        <a href="careers.html">Careers</a><a href="contact.html">Contact Us</a>
+      </nav></div>
+      <div class="footer-col"><h5>Contact</h5>
+        <div class="footer-contact-item"><div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="text"><strong>Office</strong>India (Address to be updated)</div></div>
+        <div class="footer-contact-item"><div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="text"><strong>Email</strong>info@sherylpharma.com</div></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sheryl Pharmaceuticals. All rights reserved.</p>
+      <nav class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Sitemap</a></nav>
+    </div>
+  </div>
+</footer>
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/emailjs-config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

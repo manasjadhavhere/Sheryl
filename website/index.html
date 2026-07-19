@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sheryl Pharmaceuticals — Advancing Healthcare with Care</title>
+  <meta name="description" content="Sheryl Pharmaceuticals is a dynamic pharmaceutical company committed to advancing healthcare through high-quality, safe and effective pharmaceutical solutions worldwide." />
+  <meta name="keywords" content="pharmaceuticals, healthcare, medicines, women's health, anti-infectives, Sheryl Pharmaceuticals" />
+  <meta property="og:title" content="Sheryl Pharmaceuticals — Advancing Healthcare with Care" />
+  <meta property="og:description" content="Delivering innovative, trusted and patient-centric pharmaceutical solutions worldwide." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/images/logo.png" type="image/png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- ══════════════════════ NAVBAR ══════════════════════ -->
+<nav id="navbar" aria-label="Main Navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Sheryl Pharmaceuticals Home">
+        <img src="assets/images/logo.png" alt="Sheryl Pharmaceuticals Logo" />
+      </a>
+      <div class="nav-links" role="list">
+        <a href="index.html"                  class="nav-link" role="listitem">Home</a>
+        <a href="about.html"                  class="nav-link" role="listitem">About</a>
+        <a href="therapeutic-segments.html"   class="nav-link" role="listitem">Segments</a>
+        <a href="portfolio.html"              class="nav-link" role="listitem">Portfolio</a>
+        <a href="manufacturing.html"          class="nav-link" role="listitem">Manufacturing</a>
+        <a href="quality-compliance.html"     class="nav-link" role="listitem">Quality</a>
+        <a href="global-business.html"        class="nav-link" role="listitem">Global</a>
+        <a href="news-insights.html"          class="nav-link" role="listitem">News</a>
+        <a href="careers.html"               class="nav-link" role="listitem">Careers</a>
+      </div>
+      <div class="nav-actions">
+        <a href="contact.html" class="nav-cta btn btn-sm" id="nav-contact-btn">Contact Us</a>
+        <button class="hamburger" id="hamburger" aria-label="Open Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+  <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close Menu">&#x2715;</button>
+  <a href="index.html"                class="nav-link">Home</a>
+  <a href="about.html"                class="nav-link">About</a>
+  <a href="therapeutic-segments.html" class="nav-link">Therapeutic Segments</a>
+  <a href="portfolio.html"            class="nav-link">Portfolio</a>
+  <a href="manufacturing.html"        class="nav-link">Manufacturing</a>
+  <a href="quality-compliance.html"   class="nav-link">Quality &amp; Compliance</a>
+  <a href="global-business.html"      class="nav-link">Global Business</a>
+  <a href="news-insights.html"        class="nav-link">News &amp; Insights</a>
+  <a href="careers.html"             class="nav-link">Careers</a>
+  <a href="contact.html"             class="nav-link">Contact Us</a>
+</nav>
+
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<section class="home-hero" aria-label="Hero Banner">
+  <div class="home-hero-bg" role="img" aria-label="Pharmaceutical laboratory background"></div>
+  <div class="home-hero-overlay"></div>
+  <div class="container">
+    <div class="home-hero-content">
+      <span class="eyebrow">Sheryl Pharmaceuticals</span>
+      <h1>Advancing Healthcare<br /><span>with Care.</span></h1>
+      <p>Delivering innovative, trusted and patient-centric pharmaceutical solutions to healthcare professionals and patients worldwide.</p>
+      <div class="hero-btns">
+        <a href="portfolio.html"  class="btn btn-primary btn-lg" id="hero-portfolio-btn">Explore Our Portfolio ↗</a>
+        <a href="contact.html"   class="btn btn-outline btn-lg" id="hero-partner-btn">Partner With Us</a>
+      </div>
+    </div>
+  </div>
+  <!-- Stats Bar -->
+  <div class="hero-stats" aria-label="Key statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" data-count="6">6</span>
+          <span class="stat-label">Therapeutic Segments</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="50">50</span>
+          <span class="stat-label">Products in Portfolio</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="10">10</span>
+          <span class="stat-label">Markets Served</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="100">100</span>
+          <span class="stat-label">% Quality Commitment</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ WHO WE ARE ══════════════════════ -->
+<section class="about-strip section" aria-labelledby="about-heading">
+  <div class="container">
+
+    <!-- Centered header -->
+    <div class="who-center-header reveal">
+      <span class="eyebrow">Who We Are</span>
+      <h2 id="about-heading">A Trusted Name in <span>Pharmaceutical Innovation</span></h2>
+      <div class="gold-line-center"></div>
+      <p>We work with trusted manufacturing partners and healthcare professionals to deliver products that improve patient outcomes — guided by ethics, science and compassionate care.</p>
+    </div>
+
+    <!-- 4 short rectangle feature containers (no emojis) -->
+    <div class="who-glass-features">
+      <div class="who-glass-card reveal reveal-delay-1">
+        <div class="who-card-top">
+          <span class="who-tag">01 · Certification</span>
+        </div>
+        <h4>Quality First</h4>
+        <p>WHO-GMP certified manufacturing for every product we deliver across all markets.</p>
+      </div>
+      <div class="who-glass-card reveal reveal-delay-2">
+        <div class="who-card-top">
+          <span class="who-tag">02 · Footprint</span>
+        </div>
+        <h4>Global Reach</h4>
+        <p>Serving diverse healthcare markets across Asia, Middle East &amp; Africa with reliable supply.</p>
+      </div>
+      <div class="who-glass-card reveal reveal-delay-3">
+        <div class="who-card-top">
+          <span class="who-tag">03 · Research</span>
+        </div>
+        <h4>Innovation Driven</h4>
+        <p>Continuous R&amp;D across 6 specialized therapeutic segments for evolving medical needs.</p>
+      </div>
+      <div class="who-glass-card reveal reveal-delay-4">
+        <div class="who-card-top">
+          <span class="who-tag">04 · Commitment</span>
+        </div>
+        <h4>Patient-Centric</h4>
+        <p>Every clinical formulation and strategic decision is guided by better patient outcomes.</p>
+      </div>
+    </div>
+
+    <!-- Glassmorphism quote + values + CTA -->
+    <div class="who-quote-card reveal">
+      <p class="who-quote-text">
+        "Sheryl Pharmaceuticals — a dynamic, innovation-driven company committed to <em>advancing healthcare</em> through high-quality, safe and effective pharmaceutical solutions worldwide."
+      </p>
+      <div class="who-quote-values" role="list">
+        <span class="value-chip" role="listitem">Trust</span>
+        <span class="value-chip" role="listitem">Innovation</span>
+        <span class="value-chip" role="listitem">Quality</span>
+        <span class="value-chip" role="listitem">Care</span>
+        <span class="value-chip" role="listitem">Integrity</span>
+        <span class="value-chip" role="listitem">Excellence</span>
+      </div>
+      <a href="about.html" class="btn btn-gold" id="about-learn-more-btn">Learn More About Us</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════ THERAPEUTIC SEGMENTS ══════════════════════ -->
+<section class="segments-section section" aria-labelledby="segments-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Our Expertise</span>
+      <h2 id="segments-heading">Therapeutic Segments</h2>
+      <div class="gold-line"></div>
+      <p>Comprehensive pharmaceutical solutions across six critical healthcare domains, developed with precision and patient focus.</p>
+    </div>
+    <div class="grid-6" role="list">
+      <div class="segment-card reveal reveal-delay-1" role="listitem">
+        <div class="segment-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="12" r="7"/><line x1="18" y1="19" x2="18" y2="30"/><line x1="13" y1="25" x2="23" y2="25"/></svg>
+        </div>
+        <h3>Women's Healthcare</h3>
+        <p>Specialized products for women's health across all life stages</p>
+      </div>
+      <div class="segment-card reveal reveal-delay-2" role="listitem">
+        <div class="segment-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 4L6 9.5v9.5c0 8.5 6 13.5 12 15.5 6-2 12-7 12-15.5V9.5z"/><path d="M12 18l4 4 8-8"/></svg>
+        </div>
+        <h3>Anti-Infectives</h3>
+        <p>Targeted antibiotics and antifungals for effective infection management</p>
+      </div>
+      <div class="segment-card reveal reveal-delay-3" role="listitem">
+        <div class="segment-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 9c0-2.5 2.5-5 6-5 4.5 0 7 3.5 7 7 0 4.5-4.5 5.5-4.5 10.5 0 3 2.5 5.5 6 7.5"/><path d="M13 30c1.5-4.5 6-5 6-10"/></svg>
+        </div>
+        <h3>Gastroenterology</h3>
+        <p>Digestive health solutions addressing a wide spectrum of GI conditions</p>
+      </div>
+      <div class="segment-card reveal reveal-delay-4" role="listitem">
+        <div class="segment-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 28c2.5-9.5 12-20.5 22-23-2.5 9.5-13 20.5-23 21z"/><line x1="8" y1="28" x2="19" y2="17"/></svg>
+        </div>
+        <h3>Nutrition &amp; Wellness</h3>
+        <p>Vitamins, supplements and nutraceuticals for everyday health</p>
+      </div>
+      <div class="segment-card reveal reveal-delay-5" role="listitem">
+        <div class="segment-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="4"/><circle cx="28" cy="8" r="4"/><circle cx="8" cy="28" r="4"/><circle cx="28" cy="28" r="4"/><line x1="11" y1="11" x2="25" y2="25"/></svg>
+        </div>
+        <h3>Bone &amp; Joint Care</h3>
+        <p>Orthopedic formulations supporting bone density and joint health</p>
+      </div>
+      <div class="segment-card reveal" style="transition-delay:0.6s" role="listitem">
+        <div class="segment-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="13" width="24" height="10" rx="5"/><line x1="18" y1="13" x2="18" y2="23"/></svg>
+        </div>
+        <h3>General Medicine</h3>
+        <p>Broad-spectrum formulations for everyday clinical needs</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:44px">
+      <a href="therapeutic-segments.html" class="btn btn-navy" id="segments-view-all-btn">View All Segments</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ BUSINESS MODEL ══════════════════════ -->
+<section class="business-model section section-alt" aria-labelledby="business-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">How We Operate</span>
+      <h2 id="business-heading">Our Business Model</h2>
+      <div class="gold-line"></div>
+      <p>A multi-channel approach delivering value across the pharmaceutical ecosystem — from ethical marketing to global exports.</p>
+    </div>
+    <div class="grid-4">
+      <div class="model-card reveal reveal-delay-1">
+        <span class="model-number" aria-hidden="true">01</span>
+        <div class="model-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Ethical Marketing</h3>
+        <p>Science-driven, transparent promotion of pharmaceutical products to healthcare professionals nationwide.</p>
+      </div>
+      <div class="model-card reveal reveal-delay-2">
+        <span class="model-number" aria-hidden="true">02</span>
+        <div class="model-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/></svg>
+        </div>
+        <h3>Third-Party Manufacturing</h3>
+        <p>Strategic partnerships with GMP-certified manufacturing facilities ensuring quality, flexibility and scale.</p>
+      </div>
+      <div class="model-card reveal reveal-delay-3">
+        <span class="model-number" aria-hidden="true">03</span>
+        <div class="model-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-3"/><path d="M9 9h1"/><path d="M9 13h1"/><path d="M9 17h1"/></svg>
+        </div>
+        <h3>Institutional Sales</h3>
+        <p>Dedicated supply to hospitals, government agencies and corporate healthcare organizations.</p>
+      </div>
+      <div class="model-card reveal reveal-delay-4">
+        <span class="model-number" aria-hidden="true">04</span>
+        <div class="model-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>Export Business</h3>
+        <p>Expanding our global footprint with reliable supply chain and quality-compliant pharmaceutical exports.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ MANUFACTURING ══════════════════════ -->
+<section class="mfg-strip section" aria-labelledby="mfg-heading">
+  <div class="container">
+    <div class="grid-2">
+      <div class="reveal-left">
+        <div class="section-header" style="text-align:left;margin-bottom:40px">
+          <span class="eyebrow" style="color:var(--gold-light)">Built on Excellence</span>
+          <h2 class="light" id="mfg-heading">Manufacturing Excellence</h2>
+          <div class="gold-line left"></div>
+          <p class="light">Strategic partnerships with world-class manufacturing facilities that meet the highest standards of quality, safety and regulatory compliance.</p>
+        </div>
+        <div class="mfg-features" role="list">
+          <div class="mfg-feature reveal reveal-delay-1" role="listitem">
+            <div class="mfg-feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <h4>GMP-Compliant Partners</h4>
+              <p>Every manufacturing partner evaluated for WHO-GMP and ISO compliance</p>
+            </div>
+          </div>
+          <div class="mfg-feature reveal reveal-delay-2" role="listitem">
+            <div class="mfg-feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.52 16h12.96"/></svg>
+            </div>
+            <div>
+              <h4>Advanced Technology</h4>
+              <p>Modern facilities supporting multiple dosage forms — tablets, capsules, liquids, injectables</p>
+            </div>
+          </div>
+          <div class="mfg-feature reveal reveal-delay-3" role="listitem">
+            <div class="mfg-feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <div>
+              <h4>Quality Systems</h4>
+              <p>End-to-end quality integration from raw material sourcing to final product release</p>
+            </div>
+          </div>
+          <div class="mfg-feature reveal reveal-delay-4" role="listitem">
+            <div class="mfg-feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <div>
+              <h4>Supply Chain Excellence</h4>
+              <p>Reliable logistics ensuring timely and consistent product availability</p>
+            </div>
+          </div>
+        </div>
+        <a href="manufacturing.html" class="btn btn-gold" style="margin-top:32px" id="mfg-learn-more-btn">Learn More</a>
+      </div>
+      <div class="mfg-img-wrap reveal-right">
+        <img src="assets/images/manufacturing.png" alt="State-of-the-art pharmaceutical manufacturing facility" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ QUALITY ══════════════════════ -->
+<section class="quality-strip section" aria-labelledby="quality-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Our Standards</span>
+      <h2 id="quality-heading">Quality &amp; Compliance</h2>
+      <div class="gold-line"></div>
+      <p>Quality is more than a process — it is a commitment that guides every aspect of our business and every product we deliver.</p>
+    </div>
+    <div class="grid-4">
+      <div class="quality-card reveal reveal-delay-1">
+        <div class="q-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3>Quality Assurance</h3>
+        <p>Process validation, SOPs and continuous monitoring to ensure consistent product standards.</p>
+      </div>
+      <div class="quality-card reveal reveal-delay-2">
+        <div class="q-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+        </div>
+        <h3>Quality Control</h3>
+        <p>Rigorous raw material and finished product testing, stability monitoring and packaging verification.</p>
+      </div>
+      <div class="quality-card reveal reveal-delay-3">
+        <div class="q-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <h3>Regulatory Compliance</h3>
+        <p>Comprehensive documentation and transparent processes aligned with pharmaceutical regulations.</p>
+      </div>
+      <div class="quality-card reveal reveal-delay-4">
+        <div class="q-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+        </div>
+        <h3>Patient Safety</h3>
+        <p>Patient safety remains our highest priority — in sourcing, manufacturing, storage and distribution.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="quality-compliance.html" class="btn btn-navy" id="quality-details-btn">View Our Quality Framework</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ GLOBAL PRESENCE ══════════════════════ -->
+<section class="global-section section" aria-labelledby="global-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Global Reach</span>
+      <h2 class="light" id="global-heading">Our Global Presence</h2>
+      <div class="gold-line"></div>
+      <p class="light">Building long-term partnerships across international markets, backed by reliable quality and ethical business practices.</p>
+    </div>
+    <div class="grid-2" style="align-items:start;gap:48px">
+      <div class="reveal-left">
+        <div class="world-map-wrap" aria-label="Interactive world map showing Sheryl Pharmaceuticals global markets">
+          <iframe
+            title="Sheryl Pharmaceuticals Global Presence Map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30000000!2d50!3d15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1721380000000!5m2!1sen!2sin"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <h3 style="color:var(--white);margin-bottom:24px;">Target Markets</h3>
+        <div class="global-market-list" role="list">
+          <div class="market-item" role="listitem"><span class="market-dot"></span><span>India (Domestic)</span></div>
+          <div class="market-item" role="listitem"><span class="market-dot"></span><span>South East Asia</span></div>
+          <div class="market-item" role="listitem"><span class="market-dot"></span><span>Middle East &amp; GCC</span></div>
+          <div class="market-item" role="listitem"><span class="market-dot"></span><span>Africa</span></div>
+          <div class="market-item" role="listitem"><span class="market-dot"></span><span>CIS Countries</span></div>
+          <div class="market-item" role="listitem"><span class="market-dot"></span><span>Latin America</span></div>
+          <div class="market-item" role="listitem"><span class="market-dot"></span><span>Europe (Regulated)</span></div>
+          <div class="market-item" role="listitem"><span class="market-dot"></span><span>Institutional Buyers Globally</span></div>
+        </div>
+        <a href="global-business.html" class="btn btn-gold" style="margin-top:28px" id="global-explore-btn">Explore Global Business</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ NEWS ══════════════════════ -->
+<section class="news-section section" aria-labelledby="news-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Latest Updates</span>
+      <h2 id="news-heading">News &amp; Insights</h2>
+      <div class="gold-line"></div>
+      <p>Stay informed with the latest from Sheryl Pharmaceuticals — product launches, industry news and company milestones.</p>
+    </div>
+    <div class="grid-3">
+      <article class="news-card reveal reveal-delay-1">
+        <div class="news-card-img" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="8" rx="4"/><line x1="12" y1="8" x2="12" y2="16"/></svg>
+        </div>
+        <div class="news-card-body">
+          <span class="news-date">July 2026 &nbsp;·&nbsp; <span class="tag tag-navy">Product Launch</span></span>
+          <h3>Sheryl Pharmaceuticals Expands Women's Health Portfolio</h3>
+          <p>We are proud to announce the addition of new specialty formulations to our women's healthcare segment, addressing key unmet needs.</p>
+          <a href="news-insights.html" class="news-link" aria-label="Read more about women's health portfolio expansion">Read More →</a>
+        </div>
+      </article>
+      <article class="news-card reveal reveal-delay-2">
+        <div class="news-card-img" aria-hidden="true" style="background:linear-gradient(135deg,#0A1F3C,#1A7A4A)">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div class="news-card-body">
+          <span class="news-date">June 2026 &nbsp;·&nbsp; <span class="tag">Export</span></span>
+          <h3>Strengthening Global Partnerships Across Emerging Markets</h3>
+          <p>Sheryl Pharmaceuticals forges new distribution partnerships, expanding its reach into key international pharmaceutical markets.</p>
+          <a href="news-insights.html" class="news-link" aria-label="Read more about global partnerships">Read More →</a>
+        </div>
+      </article>
+      <article class="news-card reveal reveal-delay-3">
+        <div class="news-card-img" aria-hidden="true" style="background:linear-gradient(135deg,#8a6a1e,#C9A84C)">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/></svg>
+        </div>
+        <div class="news-card-body">
+          <span class="news-date">May 2026 &nbsp;·&nbsp; <span class="tag tag-gold">Quality</span></span>
+          <h3>New Manufacturing Partner Onboarded — Raising the Quality Bar</h3>
+          <p>We have successfully onboarded a new GMP-certified manufacturing partner, further strengthening our quality and capacity.</p>
+          <a href="news-insights.html" class="news-link" aria-label="Read more about new manufacturing partner">Read More →</a>
+        </div>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="news-insights.html" class="btn btn-navy" id="news-view-all-btn">View All News</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CTA BANNER ══════════════════════ -->
+<section class="cta-banner" aria-labelledby="cta-heading">
+  <div class="container" style="position:relative;z-index:1">
+    <h2 id="cta-heading">Let's Build Better Healthcare Together</h2>
+    <p>Whether you are a healthcare professional, distributor or business partner — we would love to connect and explore how we can grow together.</p>
+    <div class="cta-btns">
+      <a href="contact.html"        class="btn btn-outline btn-lg" id="cta-contact-btn">Contact Us</a>
+      <a href="global-business.html" class="btn btn-gold btn-lg"   id="cta-partner-btn">Business Enquiry</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Sheryl Pharmaceuticals Logo" />
+        <p>A dynamic pharmaceutical company committed to advancing healthcare through high-quality, safe and effective pharmaceutical solutions worldwide.</p>
+        <div class="footer-social" role="list">
+          <a href="#" class="social-link" aria-label="LinkedIn" role="listitem">in</a>
+          <a href="#" class="social-link" aria-label="Twitter / X" role="listitem">𝕏</a>
+          <a href="#" class="social-link" aria-label="Facebook" role="listitem">f</a>
+          <a href="#" class="social-link" aria-label="Instagram" role="listitem">◎</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <nav class="footer-links" aria-label="Company links">
+          <a href="about.html">About Sheryl</a>
+          <a href="therapeutic-segments.html">Therapeutic Segments</a>
+          <a href="portfolio.html">Our Portfolio</a>
+          <a href="manufacturing.html">Manufacturing</a>
+          <a href="quality-compliance.html">Quality &amp; Compliance</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h5>Business</h5>
+        <nav class="footer-links" aria-label="Business links">
+          <a href="global-business.html">Global Business</a>
+          <a href="global-business.html#export">Export Business</a>
+          <a href="global-business.html#institutional">Institutional Sales</a>
+          <a href="news-insights.html">News &amp; Insights</a>
+          <a href="careers.html">Careers</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">
+          <div class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="text"><strong>Office</strong>India (Address to be updated)</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div class="text"><strong>Phone</strong>To be updated</div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div class="text"><strong>Email</strong>info@sherylpharma.com</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sheryl Pharmaceuticals. All rights reserved.</p>
+      <nav class="footer-bottom-links" aria-label="Legal links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Sitemap</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="js/emailjs-config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
